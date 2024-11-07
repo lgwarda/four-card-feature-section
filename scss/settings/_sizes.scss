@@ -1,0 +1,35 @@
+@use './colors';
+@use './typography'; 
+
+$breakpoints: (
+  'sm': 23.4375em,  // 375px
+  'md': 48em,       // 768px
+  'lg': 90em        // 1440px
+);
+
+$spacing-unit: 1rem;
+$wrapper-max-width: 69.375rem; // 1110px
+
+// Convert settings to custom properties
+:root {
+  // Colors
+  @each $category, $color in colors.$colors {  // Accessing the colors map via the 'colors' namespace
+    @each $name, $value in $color {
+      --color-#{$category}-#{$name}: #{$value};
+    }
+  }
+
+  // Typography
+  --font-body: #{map-get(typography.$fonts, 'body')};  // Accessing the $fonts map using the typography namespace
+  
+  @each $name, $value in typography.$font-weights {
+    --font-weight-#{$name}: #{$value};
+  }
+
+  @each $name, $value in typography.$font-sizes {
+    --font-size-#{$name}: #{$value};
+  }
+
+  // Spacing
+  --spacing-unit: #{$spacing-unit};
+}

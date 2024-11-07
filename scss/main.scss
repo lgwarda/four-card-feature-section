@@ -1,0 +1,31 @@
+// scss/main.scss
+@use 'settings/colors';
+@use 'settings/typography';
+@use 'settings/sizes';
+
+
+// Utilities
+@use 'utilities/wrapper';
+@use 'utilities/flow';
+@use 'utilities/text';
+@use 'utilities/spacing';
+
+// Base styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  background: var(--color-neutral-very-light-gray);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--spacing-unit);
+}
