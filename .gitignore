@@ -10,10 +10,34 @@
 #######################################################
 *.xd
 *.fig
-
 # Avoid your project being littered with annoying .DS_Store files!
 node_modules/
+
+# Compiled files
+css/
+dist/
+build/
+
+# OS files
 .DS_Store
-.dist/
+Thumbs.db
+
+# Editor files
 .vscode/
-*.log
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Cache
+.sass-cache/
+.cache/
