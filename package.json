@@ -1,15 +1,16 @@
 {
-  "name": "four-card-feature-section-master",
+  "name": "feature-cards",
   "version": "1.0.0",
-  "description": "![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
+  "description": "Feature cards section using CUBE CSS methodology",
   "scripts": {
+    "start": "sass scss/main.scss:css/style.css --watch",
+    "build": "sass scss/main.scss:css/style.css --style=compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["CUBE CSS", "SASS", "Feature Cards"],
   "author": "Łukasz Gwarda",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.80.6"
+    "sass": "^1.69.5"
   }
 }
