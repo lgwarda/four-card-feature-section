@@ -7,6 +7,9 @@
 @use 'blocks/feature-card';
 @use 'blocks/header';
 
+// Compsition
+@use'composition/feature-grid';
+
 // Utilities
 @use 'utilities/wrapper';
 @use 'utilities/flow';
