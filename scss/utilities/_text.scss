@@ -1,0 +1,15 @@
+.text-center {
+    text-align: center;
+  }
+  
+  .text-very-dark-blue {
+    color: var(--color-neutral-very-dark-blue);
+  }
+  
+  .text-grayish-blue {
+    color: var(--color-neutral-grayish-blue);
+  }
+  
+  .fw-light { font-weight: var(--font-weight-light); }
+  .fw-regular { font-weight: var(--font-weight-regular); }
+  .fw-semibold { font-weight: var(--font-weight-semibold); }

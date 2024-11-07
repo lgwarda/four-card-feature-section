@@ -1,0 +1,21 @@
+.site-header {
+    text-align: center;
+    max-width: 33ch;
+    margin-inline: auto;
+    margin-bottom: calc(var(--spacing-unit) * 4);
+  
+    &__title {
+      font-size: var(--font-size-h1);
+      color: var(--color-neutral-very-dark-blue);
+      
+      span {
+        display: block;
+        font-weight: var(--font-weight-light);
+      }
+    }
+  
+    &__description {
+      margin-top: var(--spacing-unit);
+      color: var(--color-neutral-grayish-blue);
+    }
+  }
