@@ -3,6 +3,9 @@
 @use 'settings/typography';
 @use 'settings/sizes';
 
+// Blocks
+@use 'blocks/feature-card';
+@use 'blocks/header';
 
 // Utilities
 @use 'utilities/wrapper';
