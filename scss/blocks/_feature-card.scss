@@ -1,5 +1,5 @@
-feature-card {
-    --card-border-top-width: 4px;
+.feature-card {
+    --card-border-top-width: 4px; // Define the width of the border
     background: white;
     padding: var(--spacing-unit);
     border-radius: 8px;
@@ -7,32 +7,38 @@ feature-card {
     position: relative;
     overflow: hidden;
   
+    // Use the ::before pseudo-element to create the border
     &::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: var(--card-border-top-width);
+      top: 0;  // Align to the top
+      left: 0;  // Align to the left
+      right: 0;  // Align to the right
+      height: var(--card-border-top-width);  // Use the custom property for the height of the border
+      width: 100%;  // Ensure the pseudo-element spans the full width of the card
     }
   
+    // Apply color to the border based on the card type
     &--supervisor::before { background: var(--color-primary-cyan); }
     &--team-builder::before { background: var(--color-primary-red); }
     &--karma::before { background: var(--color-primary-orange); }
     &--calculator::before { background: var(--color-primary-blue); }
   
+    // Title styles
     &__title {
       font-size: var(--font-size-h3);
       color: var(--color-neutral-very-dark-blue);
       margin-bottom: 0.5em;
     }
   
+    // Description styles
     &__description {
       color: var(--color-neutral-grayish-blue);
       font-size: var(--font-size-base);
       margin-bottom: 2em;
     }
   
+    // Icon styles
     &__icon {
       display: block;
       margin-left: auto;
@@ -40,3 +46,4 @@ feature-card {
       height: 64px;
     }
   }
+  
